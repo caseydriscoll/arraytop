@@ -9,7 +9,7 @@ def arraytop m, n, want_unique = true
   top = Array.new
 
   m.each { |i|
-    next if want_unique && top.include? i
+    next if want_unique && top.include?(i)
 
     if top.length < n
       top.push i
