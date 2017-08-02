@@ -5,10 +5,12 @@ m = Array.new(1000) { rand(100) }
 puts "Init integer n"
 n = 10
 
-def arraytop m, n, unique = true
+def arraytop m, n, want_unique = true
   top = Array.new
 
   m.each { |i|
+    next if want_unique && top.include? i
+
     if top.length < n
       top.push i
     elsif i > top.last then
