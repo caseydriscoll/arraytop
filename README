@@ -1,0 +1,3 @@
+Create a function that takes in an Array 'n' of random integers, and an integer 'm'.
+
+Return the top 'm' integers from the Array.
