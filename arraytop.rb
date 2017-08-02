@@ -1,9 +1,9 @@
 
 puts "Init Array m"
-m = Array.new(1000) { rand(100) }
+m = Array.new(100000) { rand(1000) }
 
 puts "Init integer n"
-n = 10
+n = 100
 
 def arraytop m, n, want_unique = true
   top = Array.new
